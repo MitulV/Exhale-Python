@@ -5,11 +5,11 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
 
     total_hours = 0
 
-    internal_jobs = {"May": {"task category": [], "task service": [], "date": [], "hours": [] }, "Jun": {"task category": [], "task service": [], "date": [], "hours": [] }, 'Jul': {"task category": [], "task service": [], "date": [], "hours": []},
-    "Aug": {"task category": [], "task service": [], "date": [], "hours": [] }, "Sep": {"task category": [], "task service": [], "date": [], "hours": [] }, "Oct" : {"task category": [], "task service": [], "date": [], "hours": [] },
-    "Nov": {"task category": [], "task service": [], "date": [], "hours": [] }, "Dec": {"task category": [], "task service": [], "date": [], "hours": [] },
-    "Jan": {"task category": [], "task service": [], "date": [], "hours": [] }, "Feb": {"task category": [], "task service": [], "date": [], "hours": []},
-    "Mar": {"task category": [], "task service": [], "date": [], "hours": [] }, "Apr": {"task category": [], "task service": [], "date": [], "hours": [] }}
+    internal_jobs = {"MAY": {"task category": [], "task service": [], "date": [], "hours": [] }, "JUN": {"task category": [], "task service": [], "date": [], "hours": [] }, 'JUL': {"task category": [], "task service": [], "date": [], "hours": []},
+    "AUG": {"task category": [], "task service": [], "date": [], "hours": [] }, "SEP": {"task category": [], "task service": [], "date": [], "hours": [] }, "OCT" : {"task category": [], "task service": [], "date": [], "hours": [] },
+    "NOV": {"task category": [], "task service": [], "date": [], "hours": [] }, "DEC": {"task category": [], "task service": [], "date": [], "hours": [] },
+    "JAN": {"task category": [], "task service": [], "date": [], "hours": [] }, "FEB": {"task category": [], "task service": [], "date": [], "hours": []},
+    "MAR": {"task category": [], "task service": [], "date": [], "hours": [] }, "APR": {"task category": [], "task service": [], "date": [], "hours": [] }}
     
     internal_jobs = dict(internal_jobs)
     print(type(internal_jobs))
@@ -36,10 +36,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
 
     if len(task_category) != 0:
        #internal_jobs['May'] = {'task_category': task_category.to_list(), 'task_service': task_service.to_list(), 'date': date_scheduled}
-        internal_jobs["May"]["task category"].extend(task_category.to_list())
-        internal_jobs["May"]["task service"].extend(task_service.to_list())
-        internal_jobs["May"]["date"].extend(date_scheduled)
-        internal_jobs["May"]["hours"].extend(task_hour)
+        internal_jobs["MAY"]["task category"].extend(task_category.to_list())
+        internal_jobs["MAY"]["task service"].extend(task_service.to_list())
+        internal_jobs["MAY"]["date"].extend(date_scheduled)
+        internal_jobs["MAY"]["hours"].extend(task_hour)
 
 
     JUN['Hours'] = [float(i) for i in JUN['Hours']]
@@ -63,10 +63,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
 
     if len(task_category) != 0:
         #internal_jobs['Jun'] = {'task_category': task_category.to_list(), 'task_service': task_service.to_list(), 'date': date_scheduled}
-        internal_jobs["Jun"]["task category"].extend(task_category.to_list())
-        internal_jobs["Jun"]["task service"].extend(task_service.to_list())
-        internal_jobs["Jun"]["date"].extend(date_scheduled)
-        internal_jobs["Jun"]["hours"].extend(task_hour)
+        internal_jobs["JUN"]["task category"].extend(task_category.to_list())
+        internal_jobs["JUN"]["task service"].extend(task_service.to_list())
+        internal_jobs["JUN"]["date"].extend(date_scheduled)
+        internal_jobs["JUN"]["hours"].extend(task_hour)
 
 
     JUL['Hours'] = [float(i) for i in JUL['Hours']]
@@ -98,10 +98,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
 
     if len(task_category) != 0:
         #internal_jobs['Jul'] = {'task_category': task_category.to_list(), 'task_service': task_service.to_list(), 'date': date_scheduled}
-        internal_jobs['Jul']['task category'] = str(task_category.values)
-        internal_jobs['Jul']['task service'] = str(task_service.values)
-        internal_jobs["Jul"]["hours"] = str(h)
-        internal_jobs['Jul']['date'].extend(date_scheduled)
+        internal_jobs['JUL']['task category'] = str(task_category.values)
+        internal_jobs['JUL']['task service'] = str(task_service.values)
+        internal_jobs["JUL"]["hours"] = str(h)
+        internal_jobs['JUL']['date'].extend(date_scheduled)
 
     
     AUG['Hours'] = [float(i) for i in AUG['Hours']]
@@ -124,10 +124,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Aug"]["task category"].extend(task_category.to_list())
-        internal_jobs["Aug"]["task service"].extend(task_service.to_list())
-        internal_jobs["Aug"]["hours"].extend(task_hour)
-        internal_jobs["Aug"]["date"].extend(date_scheduled)
+        internal_jobs["AUG"]["task category"].extend(task_category.to_list())
+        internal_jobs["AUG"]["task service"].extend(task_service.to_list())
+        internal_jobs["AUG"]["hours"].extend(task_hour)
+        internal_jobs["AUG"]["date"].extend(date_scheduled)
 
 
     SEP['Hours'] = [float(i) for i in SEP['Hours']]
@@ -150,10 +150,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Sep"]["task category"].extend(task_category.to_list())
-        internal_jobs["Sep"]["task service"].extend(task_service.to_list())
-        internal_jobs["Sep"]["hours"].extend(task_hour)
-        internal_jobs["Sep"]["date"].extend(date_scheduled)
+        internal_jobs["SEP"]["task category"].extend(task_category.to_list())
+        internal_jobs["SEP"]["task service"].extend(task_service.to_list())
+        internal_jobs["SEP"]["hours"].extend(task_hour)
+        internal_jobs["SEP"]["date"].extend(date_scheduled)
 
 
     OCT['Hours'] = [float(i) for i in OCT['Hours']]
@@ -176,10 +176,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Oct"]["task category"].extend(task_category.to_list())
-        internal_jobs["Oct"]["task service"].extend(task_service.to_list())
-        internal_jobs["Oct"]["hours"].extend(task_hour)
-        internal_jobs["Oct"]["date"].extend(date_scheduled)
+        internal_jobs["OCT"]["task category"].extend(task_category.to_list())
+        internal_jobs["OCT"]["task service"].extend(task_service.to_list())
+        internal_jobs["OCT"]["hours"].extend(task_hour)
+        internal_jobs["OCT"]["date"].extend(date_scheduled)
 
 
 
@@ -203,10 +203,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Nov"]["task category"].extend(task_category.to_list())
-        internal_jobs["Nov"]["task service"].extend(task_service.to_list())
-        internal_jobs["Nov"]["hours"].extend(task_hour)
-        internal_jobs["Nov"]["date"].extend(date_scheduled)
+        internal_jobs["NOV"]["task category"].extend(task_category.to_list())
+        internal_jobs["NOV"]["task service"].extend(task_service.to_list())
+        internal_jobs["NOV"]["hours"].extend(task_hour)
+        internal_jobs["NOV"]["date"].extend(date_scheduled)
 
 
     DEC['Hours'] = [float(i) for i in DEC['Hours']]
@@ -229,10 +229,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Dec"]["task category"].extend(task_category.to_list())
-        internal_jobs["Dec"]["task service"].extend(task_service.to_list())
-        internal_jobs["Dec"]["hours"].extend(task_hour)
-        internal_jobs["Dec"]["date"].extend(date_scheduled)
+        internal_jobs["DEC"]["task category"].extend(task_category.to_list())
+        internal_jobs["DEC"]["task service"].extend(task_service.to_list())
+        internal_jobs["DEC"]["hours"].extend(task_hour)
+        internal_jobs["DEC"]["date"].extend(date_scheduled)
 
 
     JAN['Hours'] = [float(i) for i in JAN['Hours']]
@@ -255,10 +255,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Jan"]["task category"].extend(task_category.to_list())
-        internal_jobs["Jan"]["task service"].extend(task_service.to_list())
-        internal_jobs["Jan"]["hours"].extend(task_hour)
-        internal_jobs["Jan"]["date"].extend(date_scheduled)
+        internal_jobs["JAN"]["task category"].extend(task_category.to_list())
+        internal_jobs["JAN"]["task service"].extend(task_service.to_list())
+        internal_jobs["JAN"]["hours"].extend(task_hour)
+        internal_jobs["JAN"]["date"].extend(date_scheduled)
 
 
     FEB['Hours'] = [float(i) for i in FEB['Hours']]
@@ -281,10 +281,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Feb"]["task category"].extend(task_category.to_list())
-        internal_jobs["Feb"]["task service"].extend(task_service.to_list())
-        internal_jobs["Feb"]["hours"].extend(task_hour)
-        internal_jobs["Feb"]["date"].extend(date_scheduled)
+        internal_jobs["FEB"]["task category"].extend(task_category.to_list())
+        internal_jobs["FEB"]["task service"].extend(task_service.to_list())
+        internal_jobs["FEB"]["hours"].extend(task_hour)
+        internal_jobs["FEB"]["date"].extend(date_scheduled)
 
 
     MAR['Hours'] = [float(i) for i in MAR['Hours']]
@@ -307,10 +307,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Mar"]["task category"].extend(task_category.to_list())
-        internal_jobs["Mar"]["task service"].extend(task_service.to_list())
-        internal_jobs["Mar"]["hours"].extend(task_hour)
-        internal_jobs["Mar"]["date"].extend(date_scheduled)
+        internal_jobs["MAR"]["task category"].extend(task_category.to_list())
+        internal_jobs["MAR"]["task service"].extend(task_service.to_list())
+        internal_jobs["MAR"]["hours"].extend(task_hour)
+        internal_jobs["MAR"]["date"].extend(date_scheduled)
   
 
     APR['Hours'] = [float(i) for i in APR['Hours']]
@@ -333,10 +333,10 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
         date_scheduled = day_1 + day_2
 
     if len(task_category) != 0:
-        internal_jobs["Apr"]["task category"].extend(task_category.to_list())
-        internal_jobs["Apr"]["task service"].extend(task_service.to_list())
-        internal_jobs["Apr"]["hours"].extend(task_hour)
-        internal_jobs["Apr"]["date"].extend(date_scheduled)
+        internal_jobs["APR"]["task category"].extend(task_category.to_list())
+        internal_jobs["APR"]["task service"].extend(task_service.to_list())
+        internal_jobs["APR"]["hours"].extend(task_hour)
+        internal_jobs["APR"]["date"].extend(date_scheduled)
 
 
     internal_jobs = dict(internal_jobs)
@@ -348,7 +348,7 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
             value['task category'].extend(['Landscaping + Lawn Care'])
             value['task service'].extend(['landscaping'])
             value['hours'].extend([2])
-            value['date'].extend([f'{key} + 30'])
+            value['date'].extend([f'{key} ' + '30'])
     
     if 'Pool' in internal_jobs:
 
@@ -357,7 +357,7 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
             value['task category'].extend(['Pool'])
             value['task service'].extend(['Pool cleaning & maintenance'])
             value['hours'].extend([2])
-            value['date'].extend([f'{key} + 30'])
+            value['date'].extend([f'{key} ' + '30'])
 
 
     for key, value in internal_jobs.items():
@@ -365,7 +365,7 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
             value['task category'].extend(['','','',''])
             value['task service'].extend(['Was work completed or is additional work needed ?','Notice time you spent and any product', 'Anything new discovered or mentioned by member', 'Add pre and post photos'])
             value['hours'].extend([0, 0, 0, 0])
-            value['date'].extend([f'{key} + 30', f'{key} + 30', f'{key} + 30', f'{key} + 30'])
+            value['date'].extend([f'{key} ' + '30', f'{key} ' + '30', f'{key} ' + '30', f'{key} ' + '30'])
 
 
     #internal_jobs = {'internal jobs': internal_jobs}
