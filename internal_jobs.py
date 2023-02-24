@@ -359,7 +359,7 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
             value['hours'].extend([2])
             value['date'].extend([f'{key} ' + '30'])
 
-
+    '''
     for key, value in internal_jobs.items():
             
             print(key)
@@ -369,7 +369,7 @@ def internal_job_creation(MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, JAN, FEB, MAR,
                 value['task service'].extend(['Was work completed or is additional work needed ?','Notice time you spent and any product', 'Anything new discovered or mentioned by member', 'Add pre and post photos'])
                 value['hours'].extend([0, 0, 0, 0])
                 value['date'].extend([f'{key} ' + '30', f'{key} ' + '30', f'{key} ' + '30', f'{key} ' + '30'])
-
+    '''
 
     #internal_jobs = {'internal jobs': internal_jobs}
     #internal_jobs = jsonpickle.encode(jsonpickle)
